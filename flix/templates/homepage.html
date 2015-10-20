@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans 'Welcome!' %}{% endblock %}
+
+{% block body_content %}
+<div class="row spacer">
+  <div class="container">
+    <div class="jumbotron">
+      <h1>FLIX</h1>
+      <p>
+        You know what they say: "Flix and chill!"
+        <a class="btn btn-success btn-lg" href="#">
+          <span class="glyphicon glyphicon-search"></span>
+          Find something to watch
+        </a>
+      </p>
+    </div>
+  </div>
+</div><!-- .row space -->
+
+<div class="row text-center">
+  <div class="container">
+    <div class="col-sm-3">
+      <img class="img img-responsive center-block" 
+        src="http://placehold.it/200x200" />
+      <h3>Reason 1</h3>
+      <p>
+      {% blocktrans %}
+        Something something something...
+      {% endblocktrans %}
+      </p>
+    </div>
+    <div class="col-sm-3">
+      <img class="img img-responsive center-block" 
+        src="http://placehold.it/200x200" />
+      <h3>Reason 2</h3>
+      <p>
+      {% blocktrans %}
+        Something something something...
+      {% endblocktrans %}
+      </p>
+    </div>
+    <div class="col-sm-3">
+      <img class="img img-responsive center-block" 
+        src="http://placehold.it/200x200" />
+      <h3>Reason 3</h3>
+      <p>
+      {% blocktrans %}
+        Something something something...
+      {% endblocktrans %}
+      </p>
+    </div>
+    <div class="col-sm-3">
+      <img class="img img-responsive center-block" 
+        src="http://placehold.it/200x200" />
+      <h3>Reason 4</h3>
+      <p>
+      {% blocktrans %}
+        Something something something...
+      {% endblocktrans %}
+      </p>
+    </div>
+  </div><!-- .container -->
+</div><!-- .row -->
+{% endblock %}
