@@ -1,3 +1,14 @@
-from django.shortcuts import render
+# External
+from rest_framework import viewsets
 
-# Create your views here.
+# Local
+from .models import Tag
+from .serializers import TagSerializer
+
+###########
+# Viewsets
+###########
+
+class TagViewSet(viewsets.ModelViewSet):
+    queryset = Tag.objects.all()
+    serializer_class = TagSerializer
