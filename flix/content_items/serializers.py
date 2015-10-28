@@ -11,11 +11,14 @@ class PersonSerializer(HyperlinkedModelSerializer):
 class MovieSerializer(HyperlinkedModelSerializer):
     class Meta:
         model = Movie
+        depth = 1
 
 class SeriesSerializer(HyperlinkedModelSerializer):
     class Meta:
         model = Series
+        depth = 1
 
 class EpisodeSerializer(HyperlinkedModelSerializer):
     class Meta:
         model = Episode
+        depth = 2
